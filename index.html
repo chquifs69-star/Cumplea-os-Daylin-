@@ -156,8 +156,6 @@ footer { padding: 20px; color: #7292b0; }
 </main>
 
 <script>
-let currentPhoto = 1;
-const totalPhotos = 6;
 
 const photos = [
   "1792790064398.jpg",
@@ -179,9 +177,7 @@ function changePhoto(direction) {
 
   document.getElementById("photoCount").textContent =
     "Recuerdo " + (currentPhoto + 1) + " de " + photos.length;
-}
 
-}
 </script>
 </body>
 </html>
