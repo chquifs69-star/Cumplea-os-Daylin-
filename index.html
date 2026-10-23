@@ -159,12 +159,7 @@ footer { padding: 20px; color: #7292b0; }
 let currentPhoto = 1;
 const totalPhotos = 6;
 
-function changePhoto(direction) {
-  currentPhoto += direction;
-  if (currentPhoto > totalPhotos) currentPhoto = 1;
-  if (currentPhoto < 1) currentPhoto = totalPhotos;
-
-const photos = 
+const photos = [
   "1792790064398.jpg",
   "1792790135405.jpg",
   "IMG-20261023-WA0101.jpg",
@@ -172,7 +167,20 @@ const photos =
   "file_00000000b41c71fd940a0699568fc3a2.PNG",
   "file_00000000e8e482118ef50850295d981b.png"
 ];
- 
+
+let currentPhoto = 0;
+
+function changePhoto(direction) {
+  currentPhoto = (currentPhoto + direction + photos.length) % photos.length;
+
+  const photo = document.getElementById("photo");
+  photo.src = photos[currentPhoto];
+  photo.alt = "Recuerdo " + (currentPhoto + 1) + " de Daylin";
+
+  document.getElementById("photoCount").textContent =
+    "Recuerdo " + (currentPhoto + 1) + " de " + photos.length;
+}
+
 }
 </script>
 </body>
