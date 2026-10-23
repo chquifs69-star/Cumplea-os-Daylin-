@@ -1,1 +1,175 @@
 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felicidades, mi princesa Daylin ❄️</title>
+<style>
+:root {
+  --azul: #dff2ff;
+  --azul-oscuro: #426c99;
+  --plata: #b9c8d9;
+  --blanco: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #395b7e;
+  background: linear-gradient(180deg, #eaf7ff, #d5eaff, #f8fcff);
+  text-align: center;
+}
+main { max-width: 720px; margin: auto; padding: 18px; }
+section {
+  margin: 22px 0;
+  padding: 24px 18px;
+  background: rgba(255,255,255,.84);
+  border: 1px solid #c5d8ea;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px #8eb6d52b;
+}
+.hero {
+  padding: 16px;
+  background: linear-gradient(145deg,#d9f0ff,#fff,#d9e8fa);
+}
+.hero img {
+  width: 100%;
+  max-height: 390px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid white;
+}
+h1 { font-size: clamp(2rem, 8vw, 3.2rem); color: #4778a9; margin: 20px 0 8px; }
+h2 { color: #527ca7; }
+p { line-height: 1.8; }
+.subtitle { letter-spacing: 2px; }
+.player {
+  background: #f1f8ff;
+  border: 1px solid #c8dcec;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 12px;
+}
+audio { width: 100%; margin-top: 12px; }
+.cover-icon { font-size: 35px; }
+.gallery img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #edf6ff;
+  border-radius: 14px;
+}
+button {
+  background: linear-gradient(135deg,#9dc9ef,#d8e7f7);
+  color: #294f78;
+  border: 1px solid #b5cde3;
+  padding: 12px 18px;
+  margin: 8px 4px;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:active { transform: scale(.97); }
+#photoCount { color: #6988a7; }
+.letter {
+  text-align: left;
+  background: #f8fbff;
+  padding: 20px;
+  border-radius: 14px;
+  border-left: 4px solid #b9cfe5;
+  line-height: 1.9;
+}
+footer { padding: 20px; color: #7292b0; }
+.snow { color: #9cbddd; }
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div class="snow">✧ ❄ ✧ ❄ ✧</div>
+  <img src="elsa.jpg" alt="Elsa y la magia del hielo"
+       onerror="this.style.display='none'">
+  <h1>Felicidades, mi princesa</h1>
+  <h2>Daylin 💙</h2>
+  <p class="subtitle">¡5 añitos de magia y felicidad!</p>
+  <p>Hoy el mundo brilla un poquito más porque tú estás en él. ❄️</p>
+</section>
+
+<section>
+  <div class="cover-icon">🎙️💙</div>
+  <h2>Un mensaje de papá</h2>
+  <p>Escucha estas palabras que papá preparó para ti.</p>
+  <div class="player">
+    <strong>Con todo mi amor, para Daylin</strong>
+    <audio controls preload="metadata">
+      <source src="voz-papa.mp3" type="audio/mpeg">
+      Tu navegador no puede reproducir este audio.
+    </audio>
+  </div>
+</section>
+
+<section>
+  <div class="cover-icon">🎵❄️</div>
+  <h2>Nuestra canción</h2>
+  <p>Una canción especial para mi pequeña princesa.</p>
+  <div class="player">
+    <strong>Una melodía para ti</strong>
+    <audio controls preload="metadata">
+      <source src="cancion.mp3" type="audio/mpeg">
+      Tu navegador no puede reproducir este audio.
+    </audio>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>📸 Nuestros recuerdos</h2>
+  <p>Cada fotografía guarda un pedacito de felicidad.</p>
+  <img id="photo" src="daylin1.jpg" alt="Recuerdo de Daylin"
+       onerror="this.alt='Sube las seis fotos para ver tus recuerdos';">
+  <p id="photoCount">Recuerdo 1 de 6</p>
+  <button type="button" onclick="changePhoto(-1)">❮ Anterior</button>
+  <button type="button" onclick="changePhoto(1)">Siguiente ❯</button>
+</section>
+
+<section>
+  <div class="cover-icon">💌</div>
+  <h2>Una carta de papá</h2>
+  <div class="letter">
+    <p><strong>Mi querida Daylin:</strong></p>
+    <p>Hoy cumples 5 añitos y quiero que sepas que eres uno de los regalos más hermosos de mi vida.</p>
+    <p>Deseo que crezcas rodeada de amor, que nunca dejes de sonreír y que siempre tengas el valor de perseguir tus sueños.</p>
+    <p>Nunca olvides lo especial que eres. Pase lo que pase y estés donde estés, siempre tendrás un lugar inmenso en el corazón de papá.</p>
+    <p>Que tu vida esté llena de magia, alegría y momentos tan bonitos como tú.</p>
+    <p><strong>Feliz cumpleaños, mi princesa. Te amo con todo mi corazón. 💙</strong></p>
+    <p>Con todo mi amor,<br><strong>Papá ❤️</strong></p>
+  </div>
+</section>
+
+<footer>
+  ❄️ Hecha con amor para Daylin ❄️<br>
+  Que tus cinco añitos sean el comienzo de una historia maravillosa.
+</footer>
+
+</main>
+
+<script>
+let currentPhoto = 1;
+const totalPhotos = 6;
+
+function changePhoto(direction) {
+  currentPhoto += direction;
+  if (currentPhoto > totalPhotos) currentPhoto = 1;
+  if (currentPhoto < 1) currentPhoto = totalPhotos;
+
+  const photo = document.getElementById("photo");
+  photo.src = "daylin" + currentPhoto + ".jpg";
+  photo.alt = "Recuerdo " + currentPhoto + " de Daylin";
+  document.getElementById("photoCount").textContent =
+    "Recuerdo " + currentPhoto + " de " + totalPhotos;
+}
+</script>
+</body>
+</html>
